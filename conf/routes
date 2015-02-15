@@ -3,7 +3,14 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET        /                        controllers.Application.index()
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET        /assets/*file            controllers.Assets.at(path="/public", file)
+
+# Students
+GET        /students/:imgUrl        controllers.Application.getStudents(imgUrl: String)
+GET        /students/:name          controllers.Application.getStudents2(name: String)
+
+# Emails
+POST       /emails/:emailAddress&:imgUrl    controllers.Application.postEmails(emailAddress: String, imgUrl: String)

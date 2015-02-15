@@ -2,3 +2,12 @@ This is your new Play application
 =================================
 
 This file will be packaged with your application, when using `activator dist`.
+
+// Send a image url, return a list of student objects
+List[Student]
+GET /students/img?=[url]
+
+GET /students/name?=[name]
+
+POST /emails/address?=[emailAddress]&img?=[url]
+
