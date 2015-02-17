@@ -9,8 +9,8 @@ GET        /                        controllers.Application.index()
 GET        /assets/*file            controllers.Assets.at(path="/public", file)
 
 # Students
-GET        /students/:imgUrl        controllers.Application.getStudents(imgUrl: String)
-GET        /students/:name          controllers.Application.getStudents2(name: String)
+GET        /students/img/:imgUrl    controllers.Application.getStudentsWithImg(imgUrl: String)
+GET        /students/name/:name     controllers.Application.getStudentsWithName(name: String)
 
 # Emails
 POST       /emails/:emailAddress&:imgUrl    controllers.Application.postEmails(emailAddress: String, imgUrl: String)

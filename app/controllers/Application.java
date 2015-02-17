@@ -11,7 +11,7 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
-    public static Result getStudents(String imgUrl) {
+    public static Result getStudentsWithImg(String imgUrl) {
         try {
             return ok();
         } catch (Exception e) {
@@ -19,7 +19,7 @@ public class Application extends Controller {
         }
     }
 
-    public static Result getStudents2(String name) {
+    public static Result getStudentsWithName(String name) {
         return ok();
     }
 
