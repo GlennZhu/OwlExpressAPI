@@ -7,6 +7,7 @@ This file will be packaged with your application, when using `activator dist`.
 List[Student]
 GET /students/img/[url]
 
+List[Student]
 GET /students/name/[name]
 
 POST /emails/address?=[emailAddress]&img?=[url]
