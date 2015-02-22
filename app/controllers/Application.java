@@ -1,5 +1,6 @@
 package controllers;
 
+import models.Emails;
 import play.*;
 import play.mvc.*;
 
@@ -24,6 +25,8 @@ public class Application extends Controller {
     }
 
     public static Result postEmails(String emailAddress, String imgUrl) {
+        Emails sendMail = new Emails();
+        sendMail.postEmails(emailAddress, imgUrl);
         return ok();
     }
 }
